@@ -1,2 +1,2 @@
-sleep 20s
+sleep 300s
 killall bombardier

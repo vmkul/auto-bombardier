@@ -1,0 +1,14 @@
+[Unit]
+Description=CannonServer
+After=syslog.target
+After=network.target
+
+[Service]
+User=root
+Group=root
+
+ExecStart=/usr/bin/node /usr/local/auto-bombardier/src/server.js
+TimeoutSec=30
+
+[Install]
+WantedBy=multi-user.target

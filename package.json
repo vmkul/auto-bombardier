@@ -1,0 +1,27 @@
+{
+  "name": "auto-bombardier",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "type": "module",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/vmkul/auto-bombardier.git"
+  },
+  "author": "vmkul",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/vmkul/auto-bombardier/issues"
+  },
+  "homepage": "https://github.com/vmkul/auto-bombardier#readme",
+  "dependencies": {
+    "autocannon": "^7.7.0",
+    "axios": "^0.26.0",
+    "chokidar": "^3.5.3",
+    "fastify": "^3.27.2",
+    "node-fetch": "^3.2.1"
+  }
+}
