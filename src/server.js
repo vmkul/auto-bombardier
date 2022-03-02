@@ -1,7 +1,6 @@
-import fastifyFactory from 'fastify';
-import chokidar from 'chokidar';
-import fs from 'fs';
-const fastify = fastifyFactory({ logger: true });
+const fastify = require('fastify')({ logger: true });
+const chokidar = require('chokidar');
+const fs = require('fs');
 
 const PATH_TO_TARGETS = '/usr/local/auto-bombardier/targets.txt';
 const PORT = 2577;
