@@ -1,4 +1,4 @@
-const fetch = import('node-fetch');
+const axios = require('axios');
 const autocannon = require('autocannon');
 
 const SERVER_ADDRESS = 'http://localhost:2577';
@@ -9,8 +9,8 @@ const sleep = (s) => new Promise((resolve) => setTimeout(resolve, s * 1000));
 	let targets = [];
 	try {
 	    console.log('Getting targets...');
-	    const response = await fetch(SERVER_ADDRESS);
-	    targets = (await response.json()).targets;
+	    const response = await axios.get(SERVER_ADDRESS);
+	    targets = response.data.targets;
 	} catch (e) {
 	    console.log('Error getting targets! Error: ' + e);
 	    await sleep(5);
