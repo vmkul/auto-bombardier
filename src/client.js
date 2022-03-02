@@ -32,6 +32,7 @@ const sleep = (s) => new Promise((resolve) => setTimeout(resolve, s * 1000));
 		connections: 1000,
 		pipelining: 5,
 		duration: 60,
+		workers: 8
 	    }));
 	});
 
